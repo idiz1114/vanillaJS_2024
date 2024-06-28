@@ -1,0 +1,39 @@
+/* Components */
+@import "login.css";
+@import "profile.css";
+@import "clock.css";
+@import "quotes.css";
+@import "todo.css";
+
+/* Items */
+@import "component/input.css";
+@import "component/box.css";
+@import "component/button.css";
+
+/* Setting */
+@import "reset.css";
+
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: lightcoral;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+h1 {
+  color: coral;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.hidden {
+  display: none;
+}

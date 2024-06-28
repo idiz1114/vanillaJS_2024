@@ -1,0 +1,21 @@
+
+#clock {
+  /* 정렬 스타일*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#clock h3 {
+  margin-top: 8px;
+  font-size: 48px;
+  color:white;
+}
+
+#now-time {
+  background-color: grey;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 20% 20% 20% rgba(0, 0, 0, 1);
+}

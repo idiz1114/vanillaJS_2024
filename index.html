@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="Style/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!--로그인 폼-->
+  <form id="login-form" class="hidden">
+    <h1>LOG IN</h1>
+    <h3>What is your name?</h3>
+    <input required
+      maxlength="4"
+      minlength="2"
+      id="login-input" type="text" placeholder="최대 4글자, 최소 2글자 한글 이름을 입력하세요." />
+    <button class="button" type="submit">Enter</button>
+  </form>
+
+  <!--프로필-->
+  <div id="profile" class="hidden">
+    <div id="profile-content">
+      <h1>Hello!</h1>
+      <h3 id="greeting"></h3>
+    </div>
+  </div>
+  <div class="content">
+    <!--시계-->
+    <div id="clock" class="box-style">
+      <h1>CLOCK</h1>
+      <h3 id="now-time">00:00</h3>
+    </div>
+
+    <!--랜덤 인용문-->
+    <div id="quotes"  class="box-style box-align">
+      <h1>QUOTE</h1>
+      <span id="quote"></span>
+      <span id="author"></span>
+    </div>
+  </div>
+  
+  <div class="content">
+    <!--투두 리스트-->
+    <div id="todos"  class="box-style box-align">
+      <h1>TASK</h1>
+      <form id="todo-form">
+        <input class="input-style" required minlength="5" maxlength="30" type="text" placeholder="오늘의 할 일을 적어주세요." id="todo-input" />
+      </form>
+      <ul id="todo-list">
+      </ul>
+    </div>
+
+    <div id="weather" class="box-style box-align">
+      <h1>WEATHER</h1>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  
+
+  <script src="Js/weather.js"></script>
+  <script src="Js/script.js"></script>
+  <script src="Js/clock.js"></script>
+  <script src="Js/quotes.js"></script>
+  <script src="Js/background.js"></script>
+  <script src="Js/todo.js"></script>
+</body>
+
+</html>
